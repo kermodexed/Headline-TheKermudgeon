@@ -89,7 +89,8 @@
 
             <div class="gh-copyright">
                 {{#unless @custom.footer_text}}
-                    {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                    {{!-- Added by The Kermudgeon to override default copyright notice --}}
+                    <a href="https://thekermudgeon.com/copyright-notice" target="_blank" rel="noopener">&copy; 1978 – {{date format="YYYY"}} various authors</a> • <a href="https://thekermudgeon.com/colophon/" target="_blank" rel="noopener">Colophon</a>
                 {{else}}
                     {{@custom.footer_text}}
                 {{/unless}}
