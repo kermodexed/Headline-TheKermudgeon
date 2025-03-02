@@ -54,7 +54,8 @@
                         {{#unless @member}}
                             {{#unless @site.members_invite_only}}
                                 <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
-                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                                {{!-- Modieid by The Kermudgeon to change text of Subcribe button --}}
+                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe free</a>
                             {{else}}
                                 <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Sign in</a>
                             {{/unless}}
@@ -78,7 +79,8 @@
                     {{#if @custom.email_signup_text}}
                         <div class="gh-subscribe-description">{{@custom.email_signup_text}}</div>
                     {{/if}}
-                    <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} Subscribe now</button>
+                    {{!-- Modieid by The Kermudgeon to change text of Subcribe button --}}
+                    <button class="gh-subscribe-btn gh-btn" data-portal="signup">{{> "icons/email"}} Subscribe free or support us</button>
                 </section>
             {{/unless}}
             {{/if}}
