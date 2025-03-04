@@ -2,7 +2,11 @@
       
 <main class="gh-main gh-outer">
     <div class="gh-inner">
-        
+
+          <section class="gh-pagehead">
+            <h1 class="gh-pagehead-title">Table of Contents</h1>
+        </section>
+          
         {{#if @custom.enter_tag_slugs_for_secondary_sections}}
             {{#get "tags" limit="all" filter="slug:-[featured, popular]"}}
                 {{#if tags}}
