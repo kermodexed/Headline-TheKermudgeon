@@ -8,7 +8,7 @@
                 {{#if tags}}
                     <div class="gh-topic-list">
                         {{#foreach tags}}
-                            {{> "topic-minimal"}}
+                            {{> "topic-toc-minimal"}}
                         {{/foreach}}
                     </div>
                 {{/if}}
@@ -19,7 +19,7 @@
                     {{#if tags.[3]}}
                         <div class="gh-topic-list">
                             {{#foreach tags from="4" limit="3"}}
-                                {{> "topic-minimal"}}
+                                {{> "topic-toc-minimal"}}
                             {{/foreach}}
                         </div>
                     {{/if}}
