@@ -10,7 +10,7 @@ jobs:
     env:
       ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       - name: Deploy Ghost Theme
         uses: TryGhost/action-deploy-theme@v1
         with:
